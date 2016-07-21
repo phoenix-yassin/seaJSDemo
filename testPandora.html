@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="//ue.17173cdn.com/a/lib/spm_modules/pandora/1.0.0/pandora.js"></script>
+	</head>
+
+	<body>
+		<div class="ue-gallery" data-role="gallery">
+			<div data-role="data-list">
+				<!-- data-role="data-list"属性固定 子元素为图集图片数据 -->
+				<a href="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/aVziLKbjdzAgECB.jpg" target="_blank" <!-- 原图url -->
+					data-link="http://www.17173.com">
+					<!-- 图片点击跳链的url -->
+					<img src="http://ue.17173cdn.com/a/lib/pandora/gallery/1.0.0/s.gif" <!-- 占位假图片 --> alt="第1张图片"
+					<!-- （可选）图片描述文字 -->
+					data-src="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/aVziLKbjdzAgECB.jpg!a-5-1920x1080.jpg"
+					<!-- 图片url -->
+					data-thumb="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/aVziLKbjdzAgECB.jpg!a-5-160x120.jpg"
+					<!-- （可选）导航条缩略图url，使用小图作为缩略图可大幅提高性能 -->
+					data-big="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/aVziLKbjdzAgECB.jpg!a-5-1920x1080.jpg"
+					<!-- （可选）大图url，需要全屏显示时使用 -->
+					data-height="451"
+					<!-- （可选）图片高度，设置此属性可提高性能 -->
+					data-width="720" >
+					<!-- （可选）图片宽度，设置此属性可提高性能 -->
+				</a>
+				<a href="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/ScDKjpbjdznCfnm.jpg" target="_blank">
+					<img src="http://ue.17173cdn.com/a/lib/pandora/gallery/1.0.0/s.gif" alt="第2张图片" data-src="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/ScDKjpbjdznCfnm.jpg!a-5-1920x1080.jpg" data-thumb="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/ScDKjpbjdznCfnm.jpg!a-5-160x120.jpg" data-big="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20141009/ScDKjpbjdznCfnm.jpg!a-5-1920x1080.jpg">
+				</a>
+				<a href="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20140901/gxEXnebjayfdmEn.jpg" target="_blank">
+					<img src="http://ue.17173cdn.com/a/lib/pandora/gallery/1.0.0/s.gif" alt="第3张图片" data-src="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20140901/gxEXnebjayfdmEn.jpg!a-5-1920x1080.jpg" data-thumb="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20140901/gxEXnebjayfdmEn.jpg!a-5-160x120.jpg" data-big="http://i2.17173cdn.com/i7mz64/YWxqaGBf/tu17173com/20140901/gxEXnebjayfdmEn.jpg!a-5-1920x1080.jpg">
+				</a>
+			</div>
+		</div>
+		<script>
+			pandora.use(['$', 'gallery'], function($, Gallery) {
+				new Gallery({
+					element: '[data-role=gallery]' // 此处可填jquery选择器表达式，只要能对应到页面唯一元素即可
+				});
+			});
+		</script>
+	</body>
+
+</html>
